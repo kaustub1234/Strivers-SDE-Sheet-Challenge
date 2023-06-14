@@ -2,6 +2,7 @@
 
 void rotateMatrix(vector<vector<int>> &mat, int n, int m)
 {
+    // Write your code here
     int left = 0 , right = m-1 , top  = 0 ,bottom = n-1;
 
     while(left < right && top < bottom ){
@@ -34,6 +35,6 @@ void rotateMatrix(vector<vector<int>> &mat, int n, int m)
         }
         left++;
 
-        mat[top--][left-1] = temp;
+        mat[top-1][left-1] = temp;
     }
 }
